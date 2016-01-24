@@ -13,7 +13,7 @@ u32 systime = 0;
 u32 duty = 0;
 
 //float VolValue;
-int number = 2;
+int number = 3;
 u8 ref[16];
 u8 out[16];
 
@@ -36,16 +36,21 @@ int main(void)
 		color_sensor_infor(number,0);
 		color_sensor_infor(number,0x20);
 		
-		//回发上位机观察数据
-		Send_Char(0xaa);
-		Send_String(VolValue,16);	
-		Send_Char(0xbb);
+//		//回发上位机观察数据
+//		Send_Char(0xaa);
+//		Send_String(VolValue,16);	
+//		Send_Char(0xbb);
 		
 		//红光
 		Zero_Fifteen_Red();
-		color_sensor_infor(number,0x60);
 		color_sensor_infor(number,0x40);
-					
-		Delay_Ms(10);					
+		color_sensor_infor(number,0x60);
+		
+//		//回发上位机观察数据
+//		Send_Char(0xaa);
+//		Send_String(VolValue,16);	
+//		Send_Char(0xbb);
+//					
+//		Delay_Ms(10);					
     }
 }

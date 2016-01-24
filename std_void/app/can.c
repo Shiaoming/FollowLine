@@ -185,7 +185,7 @@ char color_sensor_infor(u8 Num1,u8 Num2)
 {
 	unsigned char tmp[8];
 
-	if((Num2&&0x01)==0x00)    //ตอ8ฮป
+	if((Num2&0x20)==0x00)    //ตอ8ฮป
 	{
 		tmp[0] = VolValue[0];tmp[1] = VolValue[1];tmp[2] = VolValue[2];
 		tmp[3] = VolValue[3];tmp[4] = VolValue[4];tmp[5] = VolValue[5];

@@ -4,7 +4,7 @@ u8 VolValue[16];
 
 //延时,测试表明，350比较合适
 u16 dt1 = 350;
-//u16 dt2 = 0;
+u16 dt2 = 350;
 
 // LED引脚初始化
 void led_init(void)
@@ -140,97 +140,97 @@ void Zero_Fifteen_Blue(void)     //16蓝灯连续扫描
 void Zero_Fifteen_Red(void)     //16红灯连续扫描
 {   
 	LED_R0_ON();
-	Delay_Us(dt1);
+	Delay_Us(dt2);
 	VolValue[0] = Get_Adc_Average(10)>>4;
 	//Delay_Us(dt2);
 	LED_R0_OFF();
 
 	LED_R1_ON();
-	Delay_Us(dt1);
+	Delay_Us(dt2);
 	VolValue[1] = Get_Adc_Average(11)>>4;
 	//Delay_Us(dt2);
 	LED_R1_OFF();
 
 	LED_R2_ON();
-	Delay_Us(dt1);
+	Delay_Us(dt2);
 	VolValue[2] = Get_Adc_Average(12)>>4;
 	//Delay_Us(dt2);
 	LED_R2_OFF();
 
 	LED_R3_ON();
-	Delay_Us(dt1);
+	Delay_Us(dt2);
 	VolValue[3] = Get_Adc_Average(13)>>4;
 	//Delay_Us(dt2);
 	LED_R3_OFF();
 
 	LED_R4_ON();
-	Delay_Us(dt1);
+	Delay_Us(dt2);
 	VolValue[4] = Get_Adc_Average(0)>>4;
 	//Delay_Us(dt2);
 	LED_R4_OFF();
 
 	LED_R5_ON();
-	Delay_Us(dt1);
+	Delay_Us(dt2);
 	VolValue[5] = Get_Adc_Average(1)>>4;
 	//Delay_Us(dt2);
 	LED_R5_OFF();
 
 	LED_R6_ON();
-	Delay_Us(dt1);
+	Delay_Us(dt2);
 	VolValue[6] = Get_Adc_Average(2)>>4;
 	//Delay_Us(dt2);
 	LED_R6_OFF();
 
 	LED_R7_ON();
-	Delay_Us(dt1);
+	Delay_Us(dt2);
 	VolValue[7] = Get_Adc_Average(3)>>4;
 	//Delay_Us(dt2);
 	LED_R7_OFF();
 
 	LED_R8_ON();
-	Delay_Us(dt1);
+	Delay_Us(dt2);
 	VolValue[8] = Get_Adc_Average(4)>>4;
 	//Delay_Us(dt2);
 	LED_R8_OFF();
 
 	LED_R9_ON();
-	Delay_Us(dt1);
+	Delay_Us(dt2);
 	VolValue[9] = Get_Adc_Average(5)>>4;
 	//Delay_Us(dt2);
 	LED_R9_OFF();
 
 	LED_R10_ON();
-	Delay_Us(dt1);
+	Delay_Us(dt2);
 	VolValue[10] = Get_Adc_Average(6)>>4;
 	//Delay_Us(dt2);
 	LED_R10_OFF();
 
 	LED_R11_ON();
-	Delay_Us(dt1);
+	Delay_Us(dt2);
 	VolValue[11] = Get_Adc_Average(7)>>4;
 	//Delay_Us(dt2);
 	LED_R11_OFF();
 
 	LED_R12_ON();
-	Delay_Us(dt1);
+	Delay_Us(dt2);
 	VolValue[12] = Get_Adc_Average(14)>>4;
 	//Delay_Us(dt2);
 	LED_R12_OFF();
 
 	LED_R13_ON();
-	Delay_Us(dt1);
+	Delay_Us(dt2);
 	VolValue[13] = Get_Adc_Average(15)>>4;
 	//Delay_Us(dt2);
 	LED_R13_OFF();
 
 	LED_R14_ON();
-	Delay_Us(dt1);
+	Delay_Us(dt2);
 	VolValue[14] = Get_Adc_Average(8)>>4;
 	//Delay_Us(dt2);
 	LED_R14_OFF();
 
 	LED_R15_ON();
-	Delay_Us(dt1);
+	Delay_Us(dt2);
 	VolValue[15] = Get_Adc_Average(9)>>4;
 	//Delay_Us(dt2);
 	LED_R15_OFF(); 
